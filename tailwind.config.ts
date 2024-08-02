@@ -10,6 +10,7 @@ const config: Config = {
     extend: {
       colors: {
         'wenge': '#5D576B',
+        'baby-powder': "#FAFAFA"
       }
     },
   },
