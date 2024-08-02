@@ -1,9 +1,7 @@
 import type { Metadata } from "next";
-import { Inter } from "next/font/google";
-import Header from "../components/static/Header";
-import Footer from "../components/static/Footer";
-
-const inter = Inter({ subsets: ["latin"] });
+import { inter } from '../app/utilities/fonts'
+import Header from "./components/static/Header";
+import Footer from "./components/static/Footer";
 
 export const metadata: Metadata = {
   title: "SyncFusion",
