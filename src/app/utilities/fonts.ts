@@ -1,4 +1,4 @@
-import { Inter, Roboto_Mono, Poppins } from 'next/font/google'
+import { Inter, Roboto_Mono, Poppins, Raleway } from 'next/font/google'
 
 export const inter = Inter({
     subsets: ['latin'],
@@ -14,4 +14,10 @@ export const inter = Inter({
       subsets: ['latin'],
       display: 'swap',
       weight: '400'
+  }) 
+
+  export const raleway = Raleway({
+      subsets: ['latin'],
+      display: 'swap',
+      weight: '600'
   }) 

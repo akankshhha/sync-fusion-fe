@@ -10,7 +10,9 @@ const config: Config = {
     extend: {
       colors: {
         'wenge': '#5D576B',
-        'baby-powder': "#FAFAFA"
+        'baby-powder': "#FAFAFA",
+        'raisin-black': '#2E2E3A',
+        'english-violet': "#D496A7"
       }
     },
   },

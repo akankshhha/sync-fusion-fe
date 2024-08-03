@@ -1,7 +1,7 @@
 .responsive-nav {
   @apply p-6 m-6;
-  @apply text-wenge list-none;
-  @apply justify-between;
+  @apply text-wenge list-none ;
+  @apply flex justify-between items-center;
   @apply shadow-md rounded-md;
   @apply w-full sm:w-11/12 md:w-10/12 lg:w-9/12 xl:w-11/12;
   @apply h-auto sm:h-12 md:h-16 lg:h-20;
@@ -11,6 +11,27 @@
   @apply mx-auto;
 }
 
+.responsive-width {
+  @apply w-full sm:w-11/12 md:w-10/12 lg:w-9/12 xl:w-11/12;
+}
+
 .responsive-gap {
   @apply gap-2 sm:gap-4 md:gap-6 lg:gap-8;
+}
+
+.special-button {
+  @apply rounded-md py-2 px-4 text-white bg-raisin-black hover:bg-blue-700 transition-colors;
+}
+
+.fixed-image {
+  @apply w-10 h-10 lg:w-12 lg:h-12;
+  @apply mx-2
+}
+
+.nav-list-item {
+  @apply flex responsive-gap items-center
+}
+
+.container-basic-style {
+  @apply flex min-h-screen flex-col items-center justify-between p-24 mt-16
 }
