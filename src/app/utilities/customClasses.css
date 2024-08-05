@@ -56,3 +56,11 @@
 .underline-txt {
   @apply underline decoration-red-700 decoration-wavy decoration-2 underline-offset-4 
 }
+
+.section-info {
+  @apply flex gap-4 items-center flex-1 text-center mt-24
+}
+
+.colon {
+  @apply font-bold text-red-700
+}
