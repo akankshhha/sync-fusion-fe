@@ -7,6 +7,15 @@
   @apply h-auto sm:h-12 md:h-16 lg:h-20;
 }
 
+.reposnive-footer {
+  @apply p-6 m-6;
+  @apply text-wenge;
+  @apply items-center;
+  @apply shadow-md rounded-md;
+  @apply w-full sm:w-11/12 md:w-10/12 lg:w-9/12 xl:w-11/12;
+  @apply h-auto sm:h-12 md:h-24 lg:h-36;
+}
+
 .margin-auto {
   @apply mx-auto;
 }
@@ -28,10 +37,15 @@
   @apply mx-2
 }
 
+.small-img {
+  @apply w-8 h-8 lg:w-10 lg:h-10;
+  @apply mx-2
+}
+
 .nav-list-item {
   @apply flex responsive-gap items-center
 }
 
 .container-basic-style {
-  @apply flex min-h-screen flex-col items-center justify-between p-24 mt-16
+  @apply flex min-h-screen flex-col items-center justify-between p-24 mt-16 mx-auto
 }
