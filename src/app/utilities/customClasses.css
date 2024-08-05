@@ -24,6 +24,10 @@
   @apply w-full sm:w-11/12 md:w-10/12 lg:w-9/12 xl:w-11/12;
 }
 
+.hero-section {
+  @apply w-full sm:w-10/12 md:w-9/12 lg:w-9/12 xl:w-10/12;
+}
+
 .responsive-gap {
   @apply gap-2 sm:gap-4 md:gap-6 lg:gap-8;
 }
@@ -50,7 +54,7 @@
 }
 
 .container-basic-style {
-  @apply flex min-h-screen flex-col items-center justify-between p-24 mt-16 mx-auto
+  @apply flex min-h-screen flex-col items-center justify-between 
 }
 
 .underline-txt {
@@ -63,4 +67,21 @@
 
 .colon {
   @apply font-bold text-red-700
+}
+
+.step-btn {
+  @apply px-4 py-2 border-2 border-transparent rounded-md transition duration-300 ease-in-out;
+}
+.step-btn:hover {
+  @apply bg-gray-100 bg-opacity-50;
+}
+.step-btn.active {
+  @apply border-transparent bg-[#d8d3de] bg-opacity-50 relative;
+}
+.step-btn.active::after {
+  content: '';
+  @apply absolute bottom-0 left-0 w-full h-1 bg-red-700;
+}
+.step-content {
+  @apply mt-4 text-center p-4 border rounded-md;
 }

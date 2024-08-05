@@ -1,11 +1,18 @@
+"use client"
+
 import * as React from 'react';
 import '../app/utilities/customClasses.css'
-import { raleway, inter, poppins } from '../app/utilities/fonts'
+import { raleway } from '../app/utilities/fonts'
+import { useState } from 'react';
+import StepCard from './components/static/StepCard';
 
 export default function Home() {
+
+  const [activeStep, setActiveStep] = useState(1);
+
   return (
-    <main className={`container-basic-style responsive-width ${raleway.className} flex flex-col`}>
-      <section className="text-center my-6 flex flex-col gap-2 bg-slate-200 rounded-2xl p-24 bg-gradient-to-r from-[#f9ecec] md:to-[#f1f0f4]">
+    <main className={`container-basic-style ${raleway.className} flex flex-col`}>
+      <section className="text-center my-6 flex flex-col gap-2 bg-slate-200 rounded-2xl mx-auto p-24 bg-gradient-to-r from-[#f9ecec] md:to-[#f1f0f4] mt-48 hero-section">
         <span className='flex justify-center '>
           <img src="/assets/images/popcorn-stall.png"
             alt="popcorn-stall" />
@@ -22,7 +29,7 @@ export default function Home() {
       </section>
 
       <section className='section-info mt-24'>
-        <div className='flex-1'>
+        <div className='flex-1 flex justify-center'>
           <img src="/assets/images/connect.gif" alt="friends" className='section-img' />
         </div>
         <div className='flex-1 flex flex-col gap-3'>
@@ -34,16 +41,84 @@ export default function Home() {
         </div>
       </section>
 
-      <section className='section-info'>
-        <div className='flex-1  flex flex-col gap-3'>
-          <h1 className='text-4xl'><span className='colon'>:</span>Shared experience</h1>
-          <h2 className='text-xl'> Whether it's your favorite TV shows, movies, or personal videos, <span className='underline-txt'>Dynamite</span>  brings everyone together for a shared viewing experience like never before.</h2></div>
-        <div className='flex-1'><img src="/assets/images/Fans.gif" alt="friends" className='section-img' /></div>
+      <section className='section-info mt-24'>
 
+        <div className='flex-1 flex flex-col gap-3'>
+          <h1 className='text-4xl'>
+            <span className='colon'>:</span>
+            Shared experience
+          </h1>
+          <h2 className='text-xl'>  Whether it's your favorite TV shows, movies, or personal videos, <span className='underline-txt'>Dynamite</span>  brings everyone together for a shared viewing experience like never before.</h2>
+        </div>
+        <div className='flex-1 flex justify-center'>
+          <img src="/assets/images/Fans.gif" alt="friends" className='section-img' />
+        </div>
       </section>
 
-      <section>
-        <h1 className='text-4xl'>How does <span className='underline-txt font-extrabold'>Dynamite</span> work?</h1>
+      <section className='bg-gradient-to-r from-[#f9ecec] md:to-[#f1f0f4] p-24 my-6 w-full'>
+        <h1 className='text-4xl text-center'>How does <span className='underline-txt font-extrabold'>Dynamite</span> work?</h1>
+        <div className="flex justify-center space-x-4">
+          <button
+            onClick={() => setActiveStep(1)}
+            className={`step-btn ${activeStep === 1 ? 'active' : ''}`}
+          >
+            Step 1
+          </button>
+          <button
+            onClick={() => setActiveStep(2)}
+            className={`step-btn ${activeStep === 2 ? 'active' : ''}`}
+          >
+            Step 2
+          </button>
+          <button
+            onClick={() => setActiveStep(3)}
+            className={`step-btn ${activeStep === 3 ? 'active' : ''}`}
+          >
+            Step 3
+          </button>
+          <button
+            onClick={() => setActiveStep(4)}
+            className={`step-btn ${activeStep === 4 ? 'active' : ''}`}
+          >
+            Step 4
+          </button>
+        </div>
+        <div className={` ${activeStep === 1 ? '' : 'hidden'}`}>
+          <img src="" alt="" />
+          <StepCard
+            heading='Download Dynamite from the official website and install it on your device.'
+            subHeading=''
+          />
+        </div>
+        <div className={` ${activeStep === 2 ? '' : 'hidden'}`}>
+          <StepCard
+
+            heading='Sign up or log in to your account and invite your friends to join.'
+            subHeading=''
+          />
+                    <img src="" alt="" />
+
+        </div>
+        <div className={` ${activeStep === 3 ? '' : 'hidden'}`}>
+        <img src="" alt="" />
+
+          <StepCard
+
+            heading='Select a video file from your device to start a watch party.'
+            subHeading=''
+          />
+        </div>
+        <div className={` ${activeStep === 4 ? '' : 'hidden'}`}
+        >
+          <StepCard
+            heading='Enjoy synchronized playback and group chat with your friends!'
+            subHeading=''
+          />
+                    <img src="" alt="" />
+
+        </div >
+
+
       </section>
 
     </main>
