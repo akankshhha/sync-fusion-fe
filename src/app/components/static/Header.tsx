@@ -17,7 +17,7 @@ export default function App({activePage, setActivePage}: IHeaderProps) {
   };
 
   return (
-    <nav className={`${raleway.className} responsive-nav margin-auto responsive-gap bg-baby-powder fixed top-0 left-0 right-0 `}>
+    <nav className={`${raleway.className} responsive-nav margin-auto responsive-gap bg-white fixed top-0 left-0 right-0 `}>
       <div className='nav-list-item'>
         <Link 
           href={'/'}

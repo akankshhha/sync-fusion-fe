@@ -42,10 +42,17 @@
   @apply mx-2
 }
 
+/* .section-img {
+  @apply w-64 h-64
+} */
 .nav-list-item {
   @apply flex responsive-gap items-center
 }
 
 .container-basic-style {
   @apply flex min-h-screen flex-col items-center justify-between p-24 mt-16 mx-auto
+}
+
+.underline-txt {
+  @apply underline decoration-red-700 decoration-wavy decoration-2 underline-offset-4 
 }

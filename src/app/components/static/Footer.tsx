@@ -6,7 +6,7 @@ export interface IAppProps {
 
 export default function App (props: IAppProps) {
   return (
-    <div className='reposnive-footer margin-auto bg-baby-powder'>
+    <div className='reposnive-footer margin-auto bg-white'>
       This is footer!
     </div>
   );

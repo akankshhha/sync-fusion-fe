@@ -14,7 +14,7 @@ export default function RootLayout({
   const [activePage, setActivePage] = useState('/');
 
   return (
-    <html lang="en" className={`${inter.className} from-[#efedf7] bg-gradient-to-r to-[#E9E4F0]`}>
+    <html lang="en" className={`${inter.className} bg-baby-powder`}>
       <body>
        <Header activePage={activePage} setActivePage={setActivePage}/>
         {children}
