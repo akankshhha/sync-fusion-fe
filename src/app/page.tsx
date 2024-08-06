@@ -84,26 +84,27 @@ export default function Home() {
           </button>
         </div>
         <div className={` ${activeStep === 1 ? '' : 'hidden'}`}>
-          <img src="" alt="" />
           <StepCard
+            image='/assets/images/Fans.gif'
+            alt=''
             heading='Download Dynamite from the official website and install it on your device.'
             subHeading=''
           />
         </div>
         <div className={` ${activeStep === 2 ? '' : 'hidden'}`}>
           <StepCard
-
+            image='/assets/images/Fans.gif'
+            alt=''
             heading='Sign up or log in to your account and invite your friends to join.'
             subHeading=''
           />
-                    <img src="" alt="" />
+
 
         </div>
         <div className={` ${activeStep === 3 ? '' : 'hidden'}`}>
-        <img src="" alt="" />
-
           <StepCard
-
+            image='/assets/images/Fans.gif'
+            alt=''
             heading='Select a video file from your device to start a watch party.'
             subHeading=''
           />
@@ -111,16 +112,14 @@ export default function Home() {
         <div className={` ${activeStep === 4 ? '' : 'hidden'}`}
         >
           <StepCard
+            image='/assets/images/Fans.gif'
+            alt=''
             heading='Enjoy synchronized playback and group chat with your friends!'
             subHeading=''
           />
-                    <img src="" alt="" />
 
         </div >
-
-
       </section>
-
     </main>
   );
 }
