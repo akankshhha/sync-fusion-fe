@@ -57,7 +57,7 @@ export default function Home() {
 
       <section className='bg-gradient-to-r from-[#f9ecec] md:to-[#f1f0f4] p-24 my-6 w-full'>
         <h1 className='text-4xl text-center'>How does <span className='underline-txt font-extrabold'>Dynamite</span> work?</h1>
-        <div className="flex justify-center space-x-4">
+        <div className="flex justify-center space-x-4 my-8">
           <button
             onClick={() => setActiveStep(1)}
             className={`step-btn ${activeStep === 1 ? 'active' : ''}`}
@@ -85,37 +85,36 @@ export default function Home() {
         </div>
         <div className={` ${activeStep === 1 ? '' : 'hidden'}`}>
           <StepCard
-            image='/assets/images/Fans.gif'
+            image='/assets/images/joinIn.gif'
             alt=''
-            heading='Download Dynamite from the official website and install it on your device.'
-            subHeading=''
+            heading='Get Started on Dynamite'
+            subHeading='Create an account or log in to access all the features of Dynamite. Enjoy seamless streaming and sharing experiences.'
           />
         </div>
         <div className={` ${activeStep === 2 ? '' : 'hidden'}`}>
           <StepCard
-            image='/assets/images/Fans.gif'
+            image='/assets/images/manage.gif'
             alt=''
-            heading='Sign up or log in to your account and invite your friends to join.'
-            subHeading=''
+            heading='Manage Your Collection'
+            subHeading='Upload your favorite videos to your profile. View and organize them easily, ready to stream anytime.'
           />
-
 
         </div>
         <div className={` ${activeStep === 3 ? '' : 'hidden'}`}>
           <StepCard
-            image='/assets/images/Fans.gif'
+            image='/assets/images/invite.gif'
             alt=''
-            heading='Select a video file from your device to start a watch party.'
-            subHeading=''
+            heading='Invite Your Friends'
+            subHeading='Generate a unique code for your watch party and share it with your friends. They can join the fun with just a click.'
           />
         </div>
         <div className={` ${activeStep === 4 ? '' : 'hidden'}`}
         >
           <StepCard
-            image='/assets/images/Fans.gif'
+            image='/assets/images/blast.gif'
             alt=''
-            heading='Enjoy synchronized playback and group chat with your friends!'
-            subHeading=''
+            heading='Have a Blast'
+            subHeading='Stream your videos in sync with your friends and enjoy a shared viewing experience. Chat and react in real-time for a fun-filled movie night.'
           />
 
         </div >

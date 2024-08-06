@@ -76,7 +76,7 @@
   @apply bg-gray-100 bg-opacity-50;
 }
 .step-btn.active {
-  @apply border-transparent bg-[#d8d3de] bg-opacity-50 relative;
+  @apply border-transparent bg-[#e7e4e4] relative;
 }
 .step-btn.active::after {
   content: '';
