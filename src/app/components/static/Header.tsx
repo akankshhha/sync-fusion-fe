@@ -31,8 +31,9 @@ export default function App({activePage, setActivePage}: IHeaderProps) {
             <span 
               className={ `${roboto_mono.className}  ${activePage !== '/' ? 'hidden' : 'transition ease-in-out '} ` }>Dynamite</span>  
         </Link>
-        <Link 
-          href={'/guide'} 
+        <Link
+         
+          href={'#guideSection'} 
           onClick={() => handleNavigation('/guide')} 
           className=''>How this works</Link> 
       </div>

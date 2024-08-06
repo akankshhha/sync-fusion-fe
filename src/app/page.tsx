@@ -11,7 +11,7 @@ export default function Home() {
   const [activeStep, setActiveStep] = useState(1);
 
   return (
-    <main className={`container-basic-style ${raleway.className} flex flex-col`}>
+    <main className={`container-basic-style ${raleway.className} scroll-smooth`}>
       <section className="text-center my-6 flex flex-col gap-2 bg-slate-200 rounded-2xl mx-auto p-24 bg-gradient-to-r from-[#f9ecec] md:to-[#f1f0f4] mt-48 hero-section">
         <span className='flex justify-center '>
           <img src="/assets/images/popcorn-stall.png"
@@ -28,34 +28,46 @@ export default function Home() {
         </h4>
       </section>
 
-      <section className='section-info mt-24'>
-        <div className='flex-1 flex justify-center'>
-          <img src="/assets/images/connect.gif" alt="friends" className='section-img' />
+      <section className='section-info mt-24 px-10'>
+      <div className='w-1/2 flex justify-center'>
+          <img src="/assets/images/Fans.gif" alt="friends" className='section-img' />
         </div>
-        <div className='flex-1 flex flex-col gap-3'>
-          <h1 className='text-4xl'>
-            <span className='colon'>:</span>
-            Synchronized video playback
-          </h1>
-          <h2 className='text-xl'> Experience synchronized video playback and enjoy group chat, making every movie night a <span className='underline-txt'>blast. </span> </h2>
-        </div>
-      </section>
-
-      <section className='section-info mt-24'>
-
-        <div className='flex-1 flex flex-col gap-3'>
+        <div className='w-1/2 flex flex-col gap-3 p-4'>
           <h1 className='text-4xl'>
             <span className='colon'>:</span>
             Shared experience
           </h1>
           <h2 className='text-xl'>  Whether it's your favorite TV shows, movies, or personal videos, <span className='underline-txt'>Dynamite</span>  brings everyone together for a shared viewing experience like never before.</h2>
         </div>
-        <div className='flex-1 flex justify-center'>
-          <img src="/assets/images/Fans.gif" alt="friends" className='section-img' />
+      </section>
+
+      <section className='section-info mt-24 px-10'>
+      <div className='flex-1 flex justify-center'>
+          <img src="/assets/images/connect.gif" alt="friends" className='section-img' />
+        </div>
+        <div className='flex-1 flex flex-col gap-3 p-4'>
+          <h1 className='text-4xl'>
+            <span className='colon'>:</span>
+            Synchronized video playback
+          </h1>
+          <h2 className='text-xl'>  Experience synchronized video playback and enjoy group chat, making every movie night a <span className='underline-txt'>blast.</span> </h2>
         </div>
       </section>
 
-      <section className='bg-gradient-to-r from-[#f9ecec] md:to-[#f1f0f4] p-24 my-6 w-full'>
+      {/* <section className='flex mt-24'>
+        <div className='flex-1 flex justify-center'>
+          <img src="/assets/images/connect.gif" alt="friends" className='section-img' />
+        </div>
+        <div className='flex-1 flex flex-col gap-3 p-4'>
+          <h1 className='text-4xl'>
+            <span className='colon'>:</span>
+            Synchronized video playback
+          </h1>
+          <h2 className='text-xl'> Experience synchronized video playback and enjoy group chat, making every movie night a <span className='underline-txt'>blast. </span> </h2>
+        </div>
+      </section> */}
+
+      <section className='bg-gradient-to-r from-[#f9ecec] md:to-[#f1f0f4] p-24 my-6 w-full scroll-smooth' id='guideSection'>
         <h1 className='text-4xl text-center'>How does <span className='underline-txt font-extrabold'>Dynamite</span> work?</h1>
         <div className="flex justify-center space-x-4 my-8">
           <button

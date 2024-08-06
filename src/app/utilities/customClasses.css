@@ -62,7 +62,7 @@
 }
 
 .section-info {
-  @apply flex gap-4 items-center flex-1 text-center mt-24
+  @apply flex gap-2 items-center flex-1 text-center mt-24 w-full
 }
 
 .colon {
