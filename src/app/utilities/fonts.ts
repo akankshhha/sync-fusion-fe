@@ -19,5 +19,5 @@ export const inter = Inter({
   export const raleway = Raleway({
       subsets: ['latin'],
       display: 'swap',
-      weight: '600'
+      weight: [ '600', '700', '800', '900']
   }) 

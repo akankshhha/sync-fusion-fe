@@ -17,7 +17,7 @@ export default function App({ heading, subHeading, image1, image2 }: CardProps) 
           <span className="mr-4">
             <img src={image2} alt="little-img" className='w-12 h-auto' />
           </span>
-          <h2 className="text-2xl">{heading}</h2>
+          <h2 className="text-2xl font-extrabold">{heading}</h2>
         </div>
         <p className="text-gray-600">{subHeading}</p>
       </div>

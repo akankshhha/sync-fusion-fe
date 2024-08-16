@@ -17,7 +17,7 @@ export default function Home() {
           <img src="/assets/images/popcorn-stall.png"
             alt="popcorn-stall" />
         </span>
-        <h1 className="text-8xl font-extrabold">
+        <h1 className="text-8xl font-bold">
           <span className='animate-ping colon my-1' >:</span>
           Dynamite
         </h1>
@@ -34,7 +34,7 @@ export default function Home() {
         </div>
         <div className='w-full md:w-1/2 flex flex-col gap-3 p-4 text-left'>
           <small className="text-sm text-gray-500">Bringing Friends Closer Through Shared Media</small>
-          <h1 className='text-4xl font-bold '>Shared Experience</h1>
+          <h1 className='text-4xl font-extrabold'>Shared Experience</h1>
           <p className='text-lg'>Whether it's your favorite TV shows, movies, or personal videos, <span className='unl'>Dynamite</span> brings everyone together for a shared viewing experience like never before. Enjoy real-time reactions and more!</p>
         </div>
       </section>
@@ -42,7 +42,7 @@ export default function Home() {
       <section className='section-info mt-10 px-10 flex flex-col md:flex-row'>
         <div className='w-full md:w-1/2 flex flex-col gap-3 p-4 text-right'>
           <small className="text-sm text-gray-500">Sync Up and Enjoy Seamless Viewing Together</small>
-          <h1 className='text-4xl font-bold'>Synchronized Playback</h1>
+          <h1 className='text-4xl font-extrabold'>Synchronized Playback</h1>
           <p className='text-lg'>Experience synchronized video playback and enjoy group chat, making every movie night a <span className='unl'>blast.</span> Watch every moment unfold together with seamless streaming.</p>
         </div>
         <div className='w-full md:w-1/2 flex justify-center'>
@@ -116,17 +116,17 @@ export default function Home() {
         </div >
       </section>
 
-      <section className="bg-gradient-to-r from-[#f9ecec] md:to-[#f1f0f4] w-full py-24 flex flex-col items-center text-center">
-        <h1 className="text-4xl font-bold mb-6">
+      <section className="bg-gradient-to-r from-[#f9ecec] md:to-[#f1f0f4] w-full py-20 flex flex-col items-center text-center">
+        <h1 className="text-4xl font-extrabold mb-6">
           <span className="text-3xl mb-2">Stream.</span>
           <span className="text-3xl mb-2"> Connect.</span>
           <span className="text-3xl"> Celebrate.</span>
         </h1>
 
-        <p className="mt-6 text-lg text-[#2E2E3A] font-medium">
+        <p className="mt-3 text-lg text-[#2E2E3A] font-medium">
           Ready to dive into unforgettable movie nights? Click below to start your adventure!
         </p>
-        <button className="bg-gray-100 text-[#2E2E3A] font-semibold py-2 px-6 rounded-md shadow-lg hover:bg-gray-200 transition-colors mt-8">
+        <button className="bg-gray-100 text-[#2E2E3A] font-bold py-2 px-6 rounded-md shadow-lg hover:bg-gray-200 transition-colors mt-8">
           Get Started
         </button>
       </section>

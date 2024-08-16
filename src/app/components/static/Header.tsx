@@ -29,7 +29,7 @@ export default function App({activePage, setActivePage}: IHeaderProps) {
               onClick={() => handleNavigation('/')} 
               className='fixed-image group'/>
             <span 
-              className={ `${roboto_mono.className}  ${activePage !== '/' ? 'hidden' : 'transition ease-in-out '} ` }>Dynamite</span>  
+              className={ `${activePage !== '/' ? 'hidden' : 'transition ease-in-out '} font-bold` }>Dynamite</span>  
         </Link>
         <Link
          
