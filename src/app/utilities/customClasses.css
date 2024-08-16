@@ -85,3 +85,20 @@
 .step-content {
   @apply mt-4 text-center p-4 border rounded-md;
 }
+
+.unl {
+  padding: 0 0 8px; /* Adjust padding as needed */
+  position: relative;
+}
+
+.unl::before {
+  content: "";
+  position: absolute;
+  left: 0; /* Adjust left position if needed */
+  bottom: 0; /* Align with the bottom of the text */
+  width: 100%; /* Ensure it spans the width of the text */
+  height: 8px; /* Adjust height as needed */
+  transform: skew(-12deg); /* Apply skew to create the desired effect */
+  background: #c51818b4; /* Adjust background color */
+  z-index: -1; /* Ensure it appears behind the text */
+}
